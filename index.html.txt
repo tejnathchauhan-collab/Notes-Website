@@ -5,75 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Online Notes Store</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
     }
     header {
       background-color: #4CAF50;
       color: white;
-      padding: 15px;
+      padding: 30px 20px;
       text-align: center;
+    }
+    header h1 {
+      margin: 0;
     }
     .container {
       padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
-    .note {
-      background: white;
-      padding: 15px;
+    .note-card {
+      background-color: white;
+      padding: 20px;
       margin-bottom: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    .note h3 {
-      margin: 0;
+    .note-card h3 {
+      margin-top: 0;
     }
-    .note p {
+    .note-card p {
       color: #555;
     }
-    .btn {
+    .buy-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
       background-color: #4CAF50;
       color: white;
-      padding: 10px;
       text-decoration: none;
-      border-radius: 4px;
-      display: inline-block;
-      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .buy-btn:hover {
+      background-color: #45a049;
     }
     footer {
+      background-color: #eee;
       text-align: center;
-      padding: 10px;
-      background-color: #ddd;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>📚 Online Notes Store</h1>
-    <p>Buy High-Quality Study Notes Easily</p>
+    <h1>📚 My Notes Store</h1>
+    <p>Buy high-quality study notes instantly!</p>
   </header>
 
   <div class="container">
-    <div class="note">
-      <h3>Maths Notes - Class 12</h3>
-      <p>Comprehensive handwritten notes covering all chapters.</p>
-      <p><strong>Price: ₹99</strong></p>
-      <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20buy%20Class%2012%20Maths%20Notes" class="btn">Buy on WhatsApp</a>
+    <div class="note-card">
+      <h3>Class 10 Science Notes</h3>
+      <p>Handwritten, neat, chapter-wise notes with diagrams. Perfect for board exam preparation.</p>
+      <p><strong>Price: ₹49</strong></p>
+      <a class="buy-btn" href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20buy%20Class%2010%20Science%20Notes">Buy via WhatsApp</a>
     </div>
 
-    <div class="note">
-      <h3>Physics Notes - Class 11</h3>
-      <p>Detailed diagrams and concepts explained simply.</p>
-      <p><strong>Price: ₹89</strong></p>
-      <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20buy%20Class%2011%20Physics%20Notes" class="btn">Buy on WhatsApp</a>
+    <div class="note-card">
+      <h3>Class 12 Maths Notes (PDF)</h3>
+      <p>Complete formula sheet + solved examples for all chapters. PDF format.</p>
+      <p><strong>Price: ₹79</strong></p>
+      <a class="buy-btn" href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20buy%20Class%2012%20Maths%20Notes">Buy via WhatsApp</a>
+    </div>
+
+    <div class="note-card">
+      <h3>UPSC Polity Notes</h3>
+      <p>Crisp summary of Laxmikant + important current affairs notes. Easy to revise.</p>
+      <p><strong>Price: ₹99</strong></p>
+      <a class="buy-btn" href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20buy%20UPSC%20Polity%20Notes">Buy via WhatsApp</a>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 Online Notes Store | Contact: <a href="mailto:yourmail@example.com">yourmail@example.com</a>
+    &copy; 2025 My Notes Store | Contact: <a href="mailto:youremail@example.com">youremail@example.com</a>
   </footer>
 
 </body>
